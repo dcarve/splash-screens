@@ -1,0 +1,22 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "daniel.ermelino.carvalho@gmail.com",
+                "Name": "Daniel Carvalho"
+            }
+        ],
+        "Category": "Plasma Look And Feel",
+        "EnabledByDefault": true,
+        "Id": "Custom",
+        "License": "GPL 3+",
+        "Name": "Custom",
+        "ServiceTypes": [
+            "Plasma/LookAndFeel"
+        ],
+        "Version": "0.1",
+        "Website": ""
+    },
+    "X-KPackage-Dependencies": []
+}
