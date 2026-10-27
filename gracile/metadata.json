@@ -9,9 +9,9 @@
         ],
         "Category": "Plasma Look And Feel",
         "EnabledByDefault": true,
-        "Id": "Custom",
+        "Id": "gracile",
         "License": "GPL 3+",
-        "Name": "Custom",
+        "Name": "Gracile",
         "ServiceTypes": [
             "Plasma/LookAndFeel"
         ],

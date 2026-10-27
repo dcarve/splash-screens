@@ -9,9 +9,9 @@
         ],
         "Category": "Plasma Look And Feel",
         "EnabledByDefault": true,
-        "Id": "Kiki",
+        "Id": "kikis",
         "License": "GPL 3+",
-        "Name": "Custom",
+        "Name": "kikis",
         "ServiceTypes": [
             "Plasma/LookAndFeel"
         ],

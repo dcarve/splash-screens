@@ -5,7 +5,7 @@ import QtQuick.Window
 
 Rectangle {
     id: root
-    color: "#060E17"
+    color: '#ffffff'
     property int stage
 
     onStageChanged: {
@@ -44,24 +44,44 @@ Rectangle {
         clip: true;
 
         AnimatedImage {
-            id: face
-            source: "images/base.gif"
-            paused: false
+            id: animation
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             width:  480
             height: 853
-            smooth: true
-            visible: true
-         }
+
+            source: "images/kiki.gif"
+            fillMode: Image.PreserveAspectFit
+
+            loops: 1
+
+            onCurrentFrameChanged: {
+                if (frameCount > 0 &&
+                    currentFrame >= frameCount - 1) {
+                    playing = false
+                    }
+            }
+        }
+
+        // AnimatedImage {
+        //     id: face
+        //     source: "images/base.gif"
+        //     paused: false
+        //     anchors.horizontalCenter: parent.horizontalCenter
+        //     anchors.verticalCenter: parent.verticalCenter
+        //     width:  480
+        //     height: 853
+        //     smooth: true
+        //     visible: true
+        //  }
     }
 
        Image {
             id: busyIndicator
-            y: parent.height - 200
+            y: parent.height - 300
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.margins: units.gridUnit
-            source: "images/loading.svgz"
+            source: "images/loading.svg"
             sourceSize.height: units.gridUnit * 2
             sourceSize.width: units.gridUnit * 2
             RotationAnimator on rotation {
